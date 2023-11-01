@@ -1,0 +1,4 @@
+
+- "traefik.enable=true"
+- "traefik.http.routers.<unique-name>.rule=Host(`<your-host>`)"
+- "traefik.http.services.<unique-name>.loadbalancer.server.port=3000"
