@@ -12,7 +12,6 @@ services:
       - "--entrypoints.http.http.redirections.entrypoint.to=https"
       - "--entrypoints.http.http.redirections.entrypoint.scheme=https"
       - "--entrypoints.https.address=:443"
-      - "--entrypoints.https.tls.certResolver=le"
       - "--certificatesresolvers.le.acme.email=<YOUR EMAIL>"
       - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
       - "--certificatesresolvers.le.acme.dnschallenge=true"
